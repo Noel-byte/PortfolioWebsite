@@ -14,7 +14,7 @@ html{
 /* header */
 .header{
     height: 8rem;
-    background-color: #777;
+    background-color:#1f3143;
     display: flex;
     justify-content: space-between;
     padding: 1.2rem;
@@ -22,6 +22,8 @@ html{
     top:0;
     left: 0;
     width: 100vw;
+    z-index: 100;
+    opacity: 0.9;
 }
 
 .logo{
@@ -34,6 +36,7 @@ html{
     font-family: "Montserrat",serif;
     position: relative;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0,.3);
+    border: none;
 }
 
 .logo h3{
@@ -41,14 +44,15 @@ html{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    font-family: "Montserrat",serif;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .menu-list{
-    width: 50vw;
+    width: 35vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     letter-spacing: .2rem;
@@ -56,7 +60,9 @@ html{
 
 .menu-link{
     text-decoration: none;
-    font-size: 2rem;
+    font-family: 'Montserrat',serif;
+    font-size: 1.6rem;
+    font-weight: 300;
     color: goldenrod;
     text-transform: uppercase;
     transition: color .3s;
@@ -67,24 +73,7 @@ html{
 }
 
 
-.social-icons-list{
-    width: 25vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    letter-spacing: .2rem;
-}
 
-.social-link{
-    font-size: 1.8rem;
-    color: #333;
-    transition: color .3s;
-}
-
-.social-link:hover{
-    color: #ffd180;
-}
 
 /* end of header*/
 
@@ -92,7 +81,8 @@ html{
 .main{
     height: 50rem;
     margin-top: 8rem;
-    background: linear-gradient(45deg,rgba(0,0,0,.9),rgba(0,0,0,.2));
+    background: linear-gradient(180deg,rgba(0,0,0,.7),rgba(0,0,0,.2));
+    position: relative;
 }
 .hero{
     height: 40rem;
@@ -155,6 +145,29 @@ html{
     transform: translateY(.2rem);
 }
 
+.social-icons-list{
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    letter-spacing: .2rem;
+    position: absolute;
+    bottom: 4rem;
+    animation: anim 0.5s 1.5s backwards;
+
+}
+
+.social-link{
+    font-size: 1.8rem;
+    color: #333;
+    transition: color .3s;
+}
+
+.social-link:hover{
+    color: #ffd180;
+}
+
 @keyframes anim{
     0%{
         opacity: 0 ;
@@ -167,16 +180,11 @@ html{
 
 /* end of main */
 
-/* about */
-.about{
-    /* margin-top: 8rem; */
-    background-color: #ddd;
+/* general */
+.general-heading{
     text-align: center;
-    padding: .3rem;
-}
-
-.about-heading{
     font-size: 3.8rem;
+    font-weight: 300;
     color: #827717;
 }
 
@@ -184,14 +192,131 @@ html{
 .short-line{
       width: 10rem;
       height: .1rem;
-      background-color: #333;
+      background-color:goldenrod;
       margin: 0 auto 1rem auto;
 }
 
 .long-line{
     width: 20rem;
     height: .1rem;
-    background-color: #333;
+    background-color:goldenrod;
     margin: 0 auto 1rem auto;
 }
+/* end of general */
+
+/* about */
+.about{
+    background-color: #ddd;
+    padding: 2rem;
+}
+
+
+
+.about-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.8rem;
+   
+}
+
+.about-sub-heading{
+    font-family: 'Josefin Sans',serif;
+    font-weight: 300;
+    color:#333;
+    font-size: 2.8rem;
+    margin-bottom: .3rem;
+    text-align: left;
+}
+
+
+.skills-list{
+    list-style: none;
+    padding: 1.2rem;
+
+}
+
+.skills-item{
+    margin-bottom: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.contact-form{
+    padding: 1.2rem;
+    display: flex;
+}
+
+.contact-input{
+    padding: .6rem;
+    outline: none;
+    background-color: #827717;
+    color: #fce4ec;
+    font-size: 1.8rem;
+}
 /* end of about */
+
+/* projects */
+.projects{
+    background-color:#212121 ;
+    padding: 2rem;
+   
+}
+
+.project-wrapper{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+    gap: 6rem;
+}
+
+.project{
+    background-color: #fce4ec;
+    box-shadow: 0 3rem 6rem rgba(150, 0, 255,.1);
+}
+
+.project img{
+    width: 100%;
+}
+
+.project-desc{
+    padding: 2rem;
+}
+
+.project-title{
+    font-size: 2.8rem;
+    font-family: 'Josefin Sans',serif;
+    font-weight: 300;
+}
+
+.project-paragraph{
+    font-size: 1.6rem;
+    font-family: 'Montserrat',serif ;
+}
+/* end of projects */
+
+.footer{
+    background-color: #1f3143;
+    color:#fce4ec;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    margin-left: 2rem;
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: 'Josefin Sans',serif;
+
+}
+
+.madeby-text{
+    margin-right: 2rem;
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: 'Josefin Sans',serif;
+}
