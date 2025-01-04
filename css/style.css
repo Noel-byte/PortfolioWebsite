@@ -128,7 +128,7 @@ html{
     outline: none;
     border: none;
     color: #fce4ec;
-    font-family: "Pacifico", serif;
+    font-family: "Montserrat", serif;
   font-weight: 400;
   font-style: normal;
     padding: 1.2rem 2rem;
@@ -239,8 +239,8 @@ html{
 
 .tech{
     color: #827717;
-    font-family: "Pacifico", serif;
-  font-weight: 400;
+    font-family: "Montserrat", serif;
+  font-weight: 600;
   font-style: normal;
     /* margin-left: .8rem; */
    
