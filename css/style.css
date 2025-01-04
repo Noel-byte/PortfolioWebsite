@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+AU+VIC+Guides&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +7,8 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
 
 }
 
@@ -29,8 +30,8 @@ html{
 .logo{
     background-color: goldenrod;
     padding: 2rem;
-    width: 5rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 50%;
     color:#827717 ;
     font-family: "Montserrat",serif;
@@ -44,9 +45,10 @@ html{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-family: "Montserrat",serif;
-    font-size: 3rem;
-    font-weight: 300;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
 }
 
 .menu-list{
@@ -99,7 +101,7 @@ html{
     width: 10rem;
     border-radius: 50%;
     padding: 2rem;
-    background-color: #333;
+    background-color:#333;
     animation: anim 2s ;
 
 }
@@ -119,21 +121,26 @@ html{
 }
 
 .view-work{
-    width: 21rem;
+    width: 25rem;
     margin-top: 2rem;
-    font-size: 1.8rem;
     letter-spacing: .1rem;
     background: linear-gradient(to right,#827717,#3d3704);
     outline: none;
     border: none;
     color: #fce4ec;
-    font-family: "Josefin Sans",serif;
-    font-weight: 300;
+    font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
     padding: 1.2rem 2rem;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 10rem;
     animation: anim 1s 1s backwards;
+}
+
+.view-work::first-letter{
+    font-size: 2.1rem;
+    color: gold;
 }
 
 .view-work:hover{
@@ -214,8 +221,10 @@ html{
 
 .about-content{
     display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-evenly;
-    margin-top: 1.8rem;
+    margin-top: 2.8rem;
    
 }
 
@@ -225,8 +234,33 @@ html{
     color:#333;
     font-size: 2.8rem;
     margin-bottom: .3rem;
-    text-align: left;
+    text-align: center;
 }
+
+.tech{
+    color: #827717;
+    font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+    /* margin-left: .8rem; */
+   
+}
+
+.lister{
+    font-size: 1.4rem;
+    margin-right: .5rem;
+    color:#1f3143;
+}
+
+/* .tech::before{
+    content: "";
+    font-size: 3.8rem;
+    color:#827717;
+    position: absolute;
+    top: 0.3rem;
+    left: -1.5rem;
+} */
+
 
 
 .skills-list{
@@ -238,6 +272,7 @@ html{
 .skills-item{
     margin-bottom: 1.2rem;
     font-size: 1.7rem;
+    position: relative;
 }
 
 .contact-form{
@@ -252,12 +287,19 @@ html{
     color: #fce4ec;
     font-size: 1.8rem;
 }
+
+.line-separator{
+    width: .1rem;
+    background-color:#969494;
+    font-weight: 300;
+}
 /* end of about */
 
 /* projects */
 .projects{
     background-color:#212121 ;
     padding: 2rem;
+   
    
 }
 
@@ -271,12 +313,13 @@ html{
     gap: 6rem;
 }
 
-.project{
+.project-design{
     background-color: #fce4ec;
     box-shadow: 0 3rem 6rem rgba(150, 0, 255,.1);
+    width: 40rem;
 }
 
-.project img{
+.project-design img{
     width: 100%;
 }
 
