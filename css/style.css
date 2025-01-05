@@ -20,7 +20,7 @@ html{
 /* header */
 .header{
     height: 8rem;
-    background-color:#1f3143;
+    background-color:#415a77;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ html{
 }
 
 .logo{
-    background-color: goldenrod;
+    background-color: #f68080;
     padding: 2rem;
     width: 5.5rem;
     height: 5.5rem;
@@ -71,7 +71,7 @@ html{
     font-family: 'Montserrat',serif;
     font-size: 1.6rem;
     font-weight: 300;
-    color: goldenrod;
+    color: #f68080;
     text-transform: uppercase;
     transition: color .3s;
 }
@@ -130,7 +130,7 @@ html{
     width: 25rem;
     margin-top: 2rem;
     letter-spacing: .1rem;
-    background: linear-gradient(to right,#827717,#3d3704);
+    background: linear-gradient(to right,#f9b16e,#f68080);
     outline: none;
     border: none;
     color: #fce4ec;
@@ -150,7 +150,7 @@ html{
 }
 
 .view-work:hover{
-    background: linear-gradient(to left,#827717,#3d3704);
+    background: linear-gradient(to left,#f68080,#f9b16e);
 
 }
 
@@ -198,21 +198,21 @@ html{
     text-align: center;
     font-size: 3.8rem;
     font-weight: 300;
-    color: #827717;
+    color: #f68080;
 }
 
 
 .short-line{
       width: 10rem;
       height: .1rem;
-      background-color:goldenrod;
+      background-color:#f68080;
       margin: 0 auto 1rem auto;
 }
 
 .long-line{
     width: 20rem;
     height: .1rem;
-    background-color:goldenrod;
+    background-color:#f68080;
     margin: 0 auto 1rem auto;
 }
 /* end of general */
@@ -244,7 +244,7 @@ html{
 }
 
 .tech{
-    color: #827717;
+    color: #f68080;
     font-family: "Montserrat", serif;
   font-weight: 600;
   font-style: normal;
@@ -303,7 +303,7 @@ html{
 
 /* projects */
 .projects{
-    background-color:#212121 ;
+    background-color:#0d1b2a ;
     padding: 2rem;
    
    
@@ -348,7 +348,7 @@ html{
 
 /* footer */
 .footer{
-    background-color: #1f3143;
+    background-color: #415a77;
     color:#fce4ec;
     padding: 1.2rem;
     display: flex;
@@ -398,7 +398,7 @@ html{
     .line{
         width: 5rem;
         height: 0.4rem;
-        background-color: goldenrod;
+        background-color: #000814;
         margin-bottom: 0.4rem;
         transition: all .5s ease-in;
     }
